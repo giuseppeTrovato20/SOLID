@@ -1,9 +1,9 @@
 ﻿using System;
 namespace SOLID.Badocp
 {
-	public class Game
+	public class Client
 	{
-		public Game()
+		public Client()
 		{
 		}
 
