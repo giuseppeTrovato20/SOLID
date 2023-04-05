@@ -5,10 +5,10 @@ class Program
     static void Main(string[] args)
     {
         ShapeRenderer shapeRenderer = new ShapeRenderer();
-        Triangle triangle1 = new Triangle();
-
-        shapeRenderer.render(triangle1);
-
+        
+        shapeRenderer.RenderCircle(2);
+        shapeRenderer.RenderTriangle(2, 5);
+        shapeRenderer.RenderRectangle(2, 5);
     }
 }
 
