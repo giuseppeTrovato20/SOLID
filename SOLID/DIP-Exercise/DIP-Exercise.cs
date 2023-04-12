@@ -1,20 +1,38 @@
 ﻿using System;
 namespace SOLID.DIPExercise
 {
-    public class SlotMachine
+    public interface ISlotMachine
     {
+        string theme { get; set; }
+        void spin();
+    }
 
-        public void Spin()
+    public abstract class SlotMachine: ISlotMachine
+    {
+        public string theme { get; set; }
+
+        public void spin()
         {
             // Logic for spinning the slot machine
         }
 
-        public void RandomNumberGenerator()
-        {
-            // logic for generating the random numbers for each column
-        }
+    }
 
-        public void SlotTheme()
+    public class SlotMachineSummer: ISlotMachine
+    {
+        public string theme { get; set; }
+
+        public void spin()
+        {
+            // Logic for spinning the slot machine
+        }
+    }
+
+    public class SlotMachineLasVegas: ISlotMachine
+    {
+        public string theme { get; set; }
+
+        public void spin()
         {
             // Logic for spinning the slot machine
         }
@@ -22,16 +40,16 @@ namespace SOLID.DIPExercise
 
     public class CasinoClient
     {
-        private SlotMachine slotMachine;
+        public ISlotMachine slotMachine;
 
-        public CasinoClient()
+        public CasinoClient(ISlotMachine slotMachine)
         {
-            this.slotMachine = new SlotMachine();
+            this.slotMachine = slotMachine;
         }
 
         public void PlayGame()
         {
-            slotMachine.Spin();
+            slotMachine.spin();
         }
     }
 }

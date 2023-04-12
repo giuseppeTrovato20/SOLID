@@ -4,9 +4,9 @@ namespace SOLID.LSP
 	public class Mammifero
 	{
 
-		public virtual void cammina()
+		public virtual void respira()
 		{
-			Console.Write("Il mammifero cammina a 4km/h");
+			Console.Write("Il mammifero respira");
 		}
         
 	}

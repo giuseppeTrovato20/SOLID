@@ -7,6 +7,8 @@ namespace SOLID.ISPexercise
     public interface IWorker
     {
         void Work();
+
+        //Mangia
         void Eat();
     }
 

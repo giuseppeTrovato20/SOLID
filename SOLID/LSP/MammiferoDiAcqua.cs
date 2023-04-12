@@ -1,7 +1,7 @@
 ﻿using System;
 namespace SOLID.LSP
 {
-	public class MammiferoDiAcqua
+	public class MammiferoDiAcqua : Mammifero
 	{
 		public MammiferoDiAcqua()
 		{

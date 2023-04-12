@@ -7,6 +7,11 @@ namespace SOLID.LSP
 		{
 		}
 
+        public override void respira()
+        {
+           
+        }
+
         public override void nuota()
         {
             Console.WriteLine("nuota");

@@ -1,12 +1,29 @@
 ﻿using System;
 namespace SOLID.SCP
 {
+
+    interface IShape
+    {
+        string name;
+        int calculateArea();
+    }
+
+    public class Triangle: IShape;
+    {
+        calculateArea()
+    }
+
 	public class ShapeRenderer
 	{
 		public ShapeRenderer()
 		{
 
 		}
+
+        public void render(IShape shape) {
+            Console.WriteLine(shape.name, shape.calculateArea());
+        }
+
 
 		public void RenderCircle(int r)
 		{
